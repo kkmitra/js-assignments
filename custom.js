@@ -7,6 +7,11 @@ window.addEventListener("load", function() {
             .style.height = '300px'
     })
 
+    // Problem 2
+    document.querySelector("#problem_2_btn").addEventListener("click", function() {
+        document.querySelector(".section2 .height")
+            .style.marginLeft = '300px'
+    })
 
 
 })

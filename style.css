@@ -25,6 +25,9 @@ button {
 .section1 .height {
   transition: height 0.3s ease-in-out;
 }
+.section2 .height {
+  transition: margin 0.3s ease-in-out;
+}
 .full {
     background: #314352;
     height: 50px;
