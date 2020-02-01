@@ -25,5 +25,12 @@ window.addEventListener("load", function() {
     })
 
 
+    // Problem 10
+    document.querySelector("#problem_10_btn").addEventListener("click", function() {
+        document.querySelector(".section1")
+            .scrollIntoView({behavior: "smooth"})
+    })
+
+
 
 })
