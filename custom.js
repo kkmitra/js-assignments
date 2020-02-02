@@ -55,7 +55,16 @@ window.addEventListener("load", function () {
         document.querySelector("#problem_9_btn").disabled = true
     })
 
-    
+    // Problem 7
+    document.querySelector("#problem_7_btn").addEventListener("click", function () {
+        const list_items = document.querySelectorAll(".section7 ul > li")
+        list_items.forEach(function(elm) {
+            if(elm.innerHTML > 3 && elm.innerHTML < 7) {
+                elm.style.backgroundColor = "#ff0000"
+            }
+
+        })
+    })
 
 
 
