@@ -66,6 +66,17 @@ window.addEventListener("load", function () {
         })
     })
 
+    // Problem 8
+    document.querySelector("#problem_8_btn").addEventListener("click", function () {
+        const list_items = document.querySelectorAll(".section8 ul > li")
+        list_items.forEach(function(elm) {
+            if(elm.innerHTML !== "1") {
+                elm.style.borderColor = "#ff0000"
+            }
+
+        })
+    })
+
 
 
 
