@@ -47,6 +47,16 @@ window.addEventListener("load", function () {
         })
     })
 
+    // Problem 9
+    document.querySelector("#problem_9_btn").addEventListener("click", function () {
+        const text =  document.querySelector("#test3").value
+        document.querySelector("#test3").value = text + " --disabled"
+        document.querySelector("#test3").disabled = true
+        document.querySelector("#problem_9_btn").disabled = true
+    })
+
+    
+
 
 
 
