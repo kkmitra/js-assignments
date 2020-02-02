@@ -78,6 +78,16 @@ window.addEventListener("load", function () {
     })
 
 
+    // Problem 5
+    document.querySelector("#problem_5_btn").addEventListener("click", function () {
+        const paras = document.querySelectorAll(".section5 p")
+        document.querySelector(".section5").removeChild(paras[1])
+        const newElm = document.createElement("div")
+        newElm.appendChild(paras[1])
+        document.querySelector(".section5").insertBefore(newElm, paras[2])
+    })
+
+
 
 
 })
