@@ -12,4 +12,13 @@ $(document).ready(function() {
       marginLeft: "300px"
     });
   });
+
+  // Problem 9
+  $("#problem_9_btn").click(function() {
+    //   const input_field =
+    $(".section9 #test3")
+      .val(`${$(".section9 #test3").val()} --disabled`)
+      .prop("disabled", true);
+    $(this).prop("disabled", true);
+  });
 });
