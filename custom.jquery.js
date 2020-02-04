@@ -35,4 +35,15 @@ $(document).ready(function() {
       .nextUntil("li:eq(6)")
       .css("background-color", "#ff0000");
   });
+
+  // Problem 6
+  $("#problem_6_btn").click(function() {
+    $(".section6")
+      .find("p")
+      .each(function() {
+        if(!$(this).attr('class')) {
+          $(this).css("background-color", "#fff");
+        }
+      })
+  });
 });
