@@ -41,18 +41,21 @@ $(document).ready(function() {
     $(".section6")
       .find("p")
       .each(function() {
-        if(!$(this).attr('class')) {
+        if (!$(this).attr("class")) {
           $(this).css("background-color", "#fff");
         }
-      })
+      });
   });
 
   // Problem 5
   $("#problem_5_btn").click(function() {
     $(".section5")
       .find("p:eq(1)")
-      .wrap("<div></div>")
+      .wrap("<div></div>");
   });
 
-
+  // Problem 10
+  $("#problem_10_btn").click(function() {
+    $("html").animate({scrollTop: 0}, 'slow')
+  });
 });
