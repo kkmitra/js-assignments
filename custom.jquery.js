@@ -46,4 +46,13 @@ $(document).ready(function() {
         }
       })
   });
+
+  // Problem 5
+  $("#problem_5_btn").click(function() {
+    $(".section5")
+      .find("p:eq(1)")
+      .wrap("<div></div>")
+  });
+
+
 });
