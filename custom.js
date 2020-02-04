@@ -47,6 +47,46 @@ window.addEventListener("load", function () {
         })
     })
 
+    // Problem 9
+    document.querySelector("#problem_9_btn").addEventListener("click", function () {
+        const text =  document.querySelector("#test3").value
+        document.querySelector("#test3").value = text + " --disabled"
+        document.querySelector("#test3").disabled = true
+        document.querySelector("#problem_9_btn").disabled = true
+    })
+
+    // Problem 7
+    document.querySelector("#problem_7_btn").addEventListener("click", function () {
+        const list_items = document.querySelectorAll(".section7 ul > li")
+        list_items.forEach(function(elm) {
+            if(elm.innerHTML > 3 && elm.innerHTML < 7) {
+                elm.style.backgroundColor = "#ff0000"
+            }
+
+        })
+    })
+
+    // Problem 8
+    document.querySelector("#problem_8_btn").addEventListener("click", function () {
+        const list_items = document.querySelectorAll(".section8 ul > li")
+        list_items.forEach(function(elm) {
+            if(elm.innerHTML !== "1") {
+                elm.style.borderColor = "#ff0000"
+            }
+
+        })
+    })
+
+
+    // Problem 5
+    document.querySelector("#problem_5_btn").addEventListener("click", function () {
+        const paras = document.querySelectorAll(".section5 p")
+        document.querySelector(".section5").removeChild(paras[1])
+        const newElm = document.createElement("div")
+        newElm.appendChild(paras[1])
+        document.querySelector(".section5").insertBefore(newElm, paras[2])
+    })
+
 
 
 
