@@ -89,14 +89,13 @@ window.addEventListener("load", function () {
     // Problem 3
     document.addEventListener("scroll", function() {
         const section3 = document.querySelector(".section3")
-        if(document.documentElement.scrollTop > 700) {
+        if(document.documentElement.scrollTop > 900 || document.documentElement.scrollTop < 700) {
+            section3.style.position = "static"
+        } else {
             section3.style.position = "fixed";
             section3.style.left = 0;
             section3.style.right = 0;
             section3.style.top = 0;
-        } 
-        if(document.documentElement.scrollTop > 900 || document.documentElement.scrollTop < 700) {
-            section3.style.position = "static"
         }
     })
 })
