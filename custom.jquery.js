@@ -73,4 +73,16 @@ $(document).ready(function() {
           .removeClass("active");
       });
     });
+
+  // Problem 3
+  $(document)
+    .scroll(function() {
+      if($(this).scrollTop() > 700) {
+        $(".section3").css({position: "fixed", top: 0, left: 0, right: 0})
+      } 
+
+      if($(this).scrollTop() > 900 || $(this).scrollTop() < 700) {
+        $(".section3").css({position: "static"})
+      }
+    })
 });
