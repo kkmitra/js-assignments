@@ -56,6 +56,6 @@ $(document).ready(function() {
 
   // Problem 10
   $("#problem_10_btn").click(function() {
-    $("html").animate({scrollTop: 0}, 'slow')
+    $("html").animate({ scrollTop: 0 }, "slow");
   });
 });
