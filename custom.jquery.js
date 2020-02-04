@@ -58,4 +58,19 @@ $(document).ready(function() {
   $("#problem_10_btn").click(function() {
     $("html").animate({ scrollTop: 0 }, "slow");
   });
+
+  // Problem 4
+  $(".section4")
+    .find("button")
+    .each(function(i) {
+      $(this).click(function() {
+        $(".section4 .tabcontent")
+          .find(`div:eq(${i})`)
+          .addClass("active");
+        $(".section4 .tabcontent")
+          .find("div")
+          .not(`div:eq(${i})`)
+          .removeClass("active");
+      });
+    });
 });
