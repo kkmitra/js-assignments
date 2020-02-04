@@ -24,8 +24,15 @@ $(document).ready(function() {
 
   // Problem 8
   $("#problem_8_btn").click(function() {
-      $(".section8 li").not(":eq(0)")
-        .css("border-color", "#ff0000")
-  })
-  
+    $(".section8 li")
+      .not(":eq(0)")
+      .css("border-color", "#ff0000");
+  });
+
+  // Problem 7
+  $("#problem_7_btn").click(function() {
+    $($(".section7").find("li:eq(2)")[0])
+      .nextUntil("li:eq(6)")
+      .css("background-color", "#ff0000");
+  });
 });
