@@ -35,12 +35,4 @@ $(document).ready(function() {
       .nextUntil("li:eq(6)")
       .css("background-color", "#ff0000");
   });
-
-  // Problem 6
-  $("#problem_6_btn").click(function() {
-    $(".section6")
-      .find("p")
-      .nextUntil("li:eq(6)")
-      .css("background-color", "#ff0000");
-  });
 });
