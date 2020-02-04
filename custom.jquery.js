@@ -21,4 +21,11 @@ $(document).ready(function() {
       .prop("disabled", true);
     $(this).prop("disabled", true);
   });
+
+  // Problem 8
+  $("#problem_8_btn").click(function() {
+      $(".section8 li").not(":eq(0)")
+        .css("border-color", "#ff0000")
+  })
+  
 });
